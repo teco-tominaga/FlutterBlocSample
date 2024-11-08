@@ -3,19 +3,23 @@ import 'package:flutter/material.dart';
 import 'counter_bloc.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: CounterScreen(),
     );
   }
 }
 
 class CounterScreen extends StatefulWidget {
+  const CounterScreen({super.key});
+
   @override
   _CounterScreenState createState() => _CounterScreenState();
 }
@@ -39,7 +43,7 @@ class _CounterScreenState extends State<CounterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bloc Pattern Example"),
+        title: const Text("Bloc Pattern Example"),
       ),
       body: Center(
         child: StreamBuilder<int>(
@@ -52,7 +56,7 @@ class _CounterScreenState extends State<CounterScreen> {
                 style: Theme.of(context).textTheme.headlineMedium,
               );
             } else {
-              return CircularProgressIndicator();
+              return const CircularProgressIndicator();
             }
           },
         ),

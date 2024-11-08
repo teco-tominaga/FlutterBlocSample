@@ -1,0 +1,2 @@
+# FlutterBlocSample
+Blocアプリケーションのサンプルアプリ

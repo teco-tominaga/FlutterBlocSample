@@ -1,2 +1,3 @@
 # FlutterBlocSample
 Blocアプリケーションのサンプルアプリ
+アーキテクチャ検証用
